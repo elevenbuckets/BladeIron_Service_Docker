@@ -1,0 +1,17 @@
+{
+  "name": "11BE",
+  "version": "1.0.0",
+  "description": "Eleven Buckets Environment: BladeIron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "core-team@elevenbuckets.com",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "BladeIron": "https://github.com/elevenbuckets/BladeIron.git",
+    "bladeiron_api": "https://github.com/elevenbuckets/bladeiron_api.git",
+    "BladeIron_CLI": "https://github.com/elevenbuckets/BladeIron_CLI.git"
+  }
+}
