@@ -1,14 +1,13 @@
 #!/bin/bash -l
 
-TOPDIR=$1
-DATADIR=$TOPDIR/.ethereum
 APPDIR='/data/11be'
+export rpchost=`hostname -I`
 
+	#--netrestrict 159.89.0.0/16,13.0.0.0/8 \
 ( geth --rinkeby \
 	--syncmode light \
 	--datadir $DATADIR \
 	--rpc --rpcapi "eth,net" \
-	--netrestrict 159.89.0.0/16,13.0.0.0/8 \
 	--nat none \
 	--rpccorsdomain "*" & )
 

@@ -31,7 +31,8 @@ RUN mkdir -p /data/11be/dapps && cd /data/11be
 
 COPY ./package.json /data/11be
 RUN cd /data/11be && npm install 
-COPY ./.local /data/11be/.local
+
+VOLUME /data/11be/.local
 
 # Define working directory.
 WORKDIR /data/11be
@@ -50,4 +51,4 @@ RUN chmod +x /usr/bin/start.sh
 
 USER eleven
 
-ENTRYPOINT ["/usr/bin/start.sh"]
+ENTRYPOINT ["/usr/bin/env", "/usr/bin/start.sh"]
