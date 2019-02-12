@@ -1,6 +1,6 @@
 ## How to run:
 
-Assuming user installing and setup all 11BE config files under ***single*** folder under /home/username/elevenbuckets, and has geth datadir under /home/username/elevenbuckets/.ethereum:
+Assuming user installing and setup all 11BE config files under ***single*** folder under __/home/username/elevenbuckets__, and has geth datadir under __/home/username/elevenbuckets/.ethereum__:
 
 ```
 docker run --rm -it \
