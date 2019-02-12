@@ -1,11 +1,10 @@
 ## How to run:
 
-Assuming user installing and setup all 11BE config files under ***single*** folder under /home/username/elevenbuckets, and has geth datadir under /home/username/.ethereum:
+Assuming user installing and setup all 11BE config files under ***single*** folder under /home/username/elevenbuckets, and has geth datadir under /home/username/elevenbuckets/.ethereum:
 
 ```
 docker run --rm -it \
 -v "/home/username/elevenbuckets:/home/username/elevenbuckets:z" \
--v "/home/username/.ethereum:/home/username/.ethereum:z" \
 bladeiron_service /home/username/elevenbuckets
 ```
 
