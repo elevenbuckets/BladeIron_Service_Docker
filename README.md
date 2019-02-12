@@ -11,5 +11,5 @@ docker run --rm -it -v "/home/username/elevenbuckets:/home/username/elevenbucket
 As a temporary workaround to integrate with exsiting setup on host, one can also choose to bind the whole user home directory into docker image:
 
 ```
-docker run --rm -it -v "/home/jasonlin:/home/jasonlin:z" -v "/home/jasonlin/.ethereum:/home/jasonlin/.ethereum:z" bladeiron_service /home/jasonlin
+docker run --rm -it -v "/home/jasonlin:/home/jasonlin:z" bladeiron_service /home/jasonlin
 ```
