@@ -7,7 +7,7 @@ Assuming user installing and setup everything related to 11BE under ***single***
 - geth datadir (pre-determined or defined during setup if 11BE is managing geth); 
 - ipfs repo (user-defined location during setup, 11BE will be managing go-ipfs);
 
-### Installation example (on Linux) 
+#### Installation example (on Linux) 
 user places everything under __/home/username/elevenbuckets__:
 
 - 11BE bootstrap dir: /home/username/elevenbuckets/.local
@@ -19,6 +19,7 @@ Then the docker can be started by following command:
 
 ```
 docker run --rm -it \
+-e DATADIR="/home/username/elevenbuckets/.ethereum" \
 -v "/home/username/elevenbuckets:/home/username/elevenbuckets:z" \
 -v "/home/username/elevenbuckets/.local:/data/11be/.local:z" \
 bladeiron_service /home/username/elevenbuckets
@@ -33,6 +34,7 @@ As a temporary workaround to integrate with exsiting setup on host, one can also
 
 ```
 docker run --rm -it \
+-e DATADIR="/home/jasonlin/.ethereum/rinkeby" \
 -v "/home/jasonlin:/home/jasonlin:z" \
 -v "/home/jasonlin/11be/.local:/home/jasonlin/11be/.local:z" \
 bladeiron_service /home/jasonlin
