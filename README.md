@@ -7,7 +7,7 @@ Assuming user installing and setup everything related to 11BE under ***single***
 - geth datadir (pre-determined or defined during setup if 11BE is managing geth); 
 - ipfs repo (user-defined location during setup, 11BE will be managing go-ipfs);
 
-#### Installation example (on Linux) 
+#### 1. Installation example (on Linux) 
 user places everything under __/home/username/elevenbuckets__:
 
 - 11BE bootstrap dir: /home/username/elevenbuckets/.local
@@ -25,10 +25,11 @@ docker run --rm -it \
 bladeiron_service
 ```
 
-#### Note: folder .local (bootstrap) needs to be explicitly mounted
+__Note: folder .local (bootstrap) needs to be explicitly mounted__
+
 Folder .local is actually an internal location for 11BE bootstrapping. At the moment (11BE dev preview) things has to be done manually, but we will soon update our setup procedure so that it should be done automatically. We aim to provide easy docker integration for general users on multiple OS.
 
-### Integrate with exsiting setup on host 
+#### 2. Integrate with exsiting setup on host 
 
 As a temporary workaround to integrate with exsiting setup on host, one can also choose to bind the whole user home directory into docker image (the following example is for Linux):
 
