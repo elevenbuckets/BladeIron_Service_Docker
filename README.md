@@ -7,7 +7,8 @@ Assuming user installing and setup everything related to 11BE under ***single***
 - geth datadir (pre-determined or defined during setup if 11BE is managing geth); 
 - ipfs repo (user-defined location during setup, 11BE will be managing go-ipfs);
 
-For example (on Linux): user places everything under __/home/username/elevenbuckets__:
+### Installation example (on Linux) 
+user places everything under __/home/username/elevenbuckets__:
 
 - 11BE bootstrap dir: /home/username/elevenbuckets/.local
 - 11BE configDir: /home/username/elevenbuckets/.configs
