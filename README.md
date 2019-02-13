@@ -8,8 +8,8 @@ docker run --rm -it \
 -v "/home/username/elevenbuckets/.local:/data/11be/.local:z" \
 bladeiron_service /home/username/elevenbuckets
 ```
-#### Note that .local (bootstrap) needs to be explicitly mounted
-For now things has to be done manually, but CP setup should allow automatic docker command-line script to be generated accordingly.
+#### Note: folder .local (bootstrap) needs to be explicitly mounted
+Folder .local is actually an internal location for 11BE bootstrapping. At the moment things has to be done manually, but we will soon update our setup procedure so that it should be done automatically.
 
 ### Integrate with exsiting setup on host 
 
