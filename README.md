@@ -37,6 +37,6 @@ For developers / pro-users that wants to integrate 11BE with their exsiting setu
 docker run --rm -it \
 -e DATADIR="/home/jasonlin/.ethereum/rinkeby" \
 -v "/home/jasonlin:/home/jasonlin:z" \
--v "/home/jasonlin/11be/.local:/home/jasonlin/11be/.local:z" \
+-v "/home/jasonlin/11be/.local:/data/11be/.local:z" \
 bladeiron_service
 ```
