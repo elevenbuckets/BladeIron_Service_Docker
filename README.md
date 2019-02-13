@@ -45,5 +45,5 @@ bladeiron_service
 | Option | expected input type | comments |
 |--|--|--|
 | DATADIR | path | The path to geth datadir. 11BE requires this path to be explicitly defined |
-| EXPOSERPC | true/false | While we design this docker service to hide geth RPC/WS behind 11BE, for developers that needs to compile solidity using tools like truffle, one can expose geth RPC on the (non-routable) docker internal IPs (172.17.0.0/16). Note that this changes requires 11BE configurations to be adjusted accordingly.|
+| EXPOSERPC | toggle | While we design this docker service to hide geth RPC/WS behind 11BE. <br><br>For developers that needs to compile solidity using tools like truffle, one can expose geth RPC on the (non-routable) docker internal IPs (172.17.0.0/16).<br> <br>Note that this changes requires 11BE configurations to be adjusted accordingly.|
 | NETRESTRICT | comma saperated CIDR specifications | This is mapped to geth option of the same name. It simply passes the argument provided to geth |
