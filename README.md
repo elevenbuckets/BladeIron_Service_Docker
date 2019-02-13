@@ -31,7 +31,7 @@ Folder .local is actually an internal location for 11BE bootstrapping. At the mo
 
 #### 2. Integrate with exsiting setup on host 
 
-As a temporary workaround to integrate with exsiting setup on host, one can also choose to bind the whole user home directory into docker image (the following example is for Linux):
+For developers / pro-users that wants to integrate 11BE with their exsiting setup, it can be achieved by binding the whole user home directory into docker image (the following example is for Linux):
 
 ```
 docker run --rm -it \
