@@ -10,10 +10,10 @@ Assuming user installing and setup everything related to 11BE under ***single***
 #### 1. Installation example (on Linux) 
 user places everything under __/home/username/elevenbuckets__:
 
-- 11BE bootstrap dir: /home/username/elevenbuckets/.local
-- 11BE configDir: /home/username/elevenbuckets/.configs
-- geth datadir: /home/username/elevenbuckets/.ethereum
-- ipfs repo: /home/username/elevenbuckets/ipfs_repo
+- 11BE bootstrap dir: */home/username/elevenbuckets/.local*
+- 11BE configDir: */home/username/elevenbuckets/.configs*
+- geth datadir: */home/username/elevenbuckets/.ethereum*
+- ipfs repo: */home/username/elevenbuckets/ipfs_repo*
 
 Then the docker can be started by following command:
 
