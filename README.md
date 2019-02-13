@@ -22,7 +22,7 @@ docker run --rm -it \
 -e DATADIR="/home/username/elevenbuckets/.ethereum" \
 -v "/home/username/elevenbuckets:/home/username/elevenbuckets:z" \
 -v "/home/username/elevenbuckets/.local:/data/11be/.local:z" \
-bladeiron_service /home/username/elevenbuckets
+bladeiron_service
 ```
 
 #### Note: folder .local (bootstrap) needs to be explicitly mounted
@@ -37,5 +37,5 @@ docker run --rm -it \
 -e DATADIR="/home/jasonlin/.ethereum/rinkeby" \
 -v "/home/jasonlin:/home/jasonlin:z" \
 -v "/home/jasonlin/11be/.local:/home/jasonlin/11be/.local:z" \
-bladeiron_service /home/jasonlin
+bladeiron_service
 ```
