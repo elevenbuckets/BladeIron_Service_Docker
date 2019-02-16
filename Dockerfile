@@ -27,7 +27,7 @@ RUN cd /usr/local/ && \
 COPY ./nodejs.sh /etc/profile.d/
 
 RUN /bin/bash -l -c "n 8.6.0"
-RUN mkdir -p /data/11be/dapps && cd /data/11be
+RUN mkdir -p /data/11be/dapps
 
 COPY ./package.json /data/11be
 RUN cd /data/11be && npm install 
@@ -39,6 +39,7 @@ WORKDIR /data/11be
 
 EXPOSE 4001
 EXPOSE 8081
+EXPOSE 5353/udp
 EXPOSE 4002/udp
 EXPOSE 30303
 EXPOSE 30303/udp
